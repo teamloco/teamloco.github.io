@@ -17,7 +17,7 @@ angular.module('locoapp', ['duParallax'])
   this.detailsImg = 'assets/screenshots/details.png';
 
   this.mapString = 'Find Your Way';
-  this.mapDescString = 'Avoid the delays. Check nearby stations and see which ones are operationg before you get there.';
+  this.mapDescString = 'Avoid the delays. Check nearby stations and see which ones are operating before you get there.';
   this.mapImg = 'assets/screenshots/map.png';
 
   this.favString = 'Stay in the Loop';
