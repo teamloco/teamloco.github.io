@@ -1,14 +1,15 @@
 angular.module('locoapp')
 .component('parallaxImage', {
-  controller: function($scope, parallaxHelper) {
-    $scope.background = parallaxHelper.createAnimator(-0.5);
+  controller: function() {
   },
   bindings: {
-    image: '<'
+    image: '<',
+    title: '<'
   },
   template: `
-    <div class="bg">
-      <img du-parallax y="background" src={{$ctrl.image}} alt="something pretty">
+    <div class="bg__header--container">
+      <img src={{$ctrl.image}} alt="something pretty">
+      <p class="bg__header--title">{{$ctrl.title}}</p>
     </div>
   `
 });
