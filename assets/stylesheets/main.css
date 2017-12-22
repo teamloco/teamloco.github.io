@@ -68,6 +68,7 @@ p {
   align-items: center;
   z-index: 100;
   width: 100vw;
+  box-sizing: border-box;
   height: 72px;
   position: sticky;
   top: 0;
