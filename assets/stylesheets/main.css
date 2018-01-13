@@ -55,6 +55,9 @@ a {
   align-items: center;
   flex-direction: row;
   margin-right: 32px; }
+  @media screen and (max-width: 600px) {
+    .navbar__inner {
+      margin-right: 16px; } }
 
 .navbar__user {
   display: flex;
@@ -68,6 +71,9 @@ a {
   @media screen and (max-width: 600px) {
     .navbar__user p {
       display: none; } }
+  @media screen and (max-width: 600px) {
+    .navbar__user {
+      margin: 0 4px; } }
 
 /* Parallax Image */
 .bg__container {

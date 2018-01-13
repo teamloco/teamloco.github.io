@@ -26,6 +26,10 @@
   align-items: center;
   flex-direction: row;
   margin-right: 32px;
+
+  @include media-query($on-small) {
+    margin-right: 16px;
+  }
 }
 
 .navbar__user {
@@ -44,6 +48,10 @@
     @include media-query($on-small) {
       display: none;
     }
+  }
+
+  @include media-query($on-small) {
+    margin: 0 4px;
   }
 }
 
