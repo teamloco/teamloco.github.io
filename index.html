@@ -7,25 +7,193 @@
     <title>Loco</title>
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     <script src="lib/jquery-3.2.1.min.js"></script>
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-scroll.min.js"></script>
-    <script src="lib/angular-parallax.min.js"></script>
+    <script src="assets/teamloco.js"></script>
   </head>
 
   <body>
-    <div class="app" ng-app="locoapp">
-      <app></app>
+    <div class="app">
+
+      <div class="navbar-container">
+        <p class="navbar-logo">Loco</p>
+        <div class="navbar__inner">
+          <div class="navbar__user">
+            <img src="assets/screenshots/sk.jpg" alt="sam">
+            <p><a href="https://github.com/kwak123">Sam Kwak</a></p>
+          </div>
+          <div class="navbar__user">
+            <img src="assets/screenshots/uv.jpeg" alt="uciel">
+            <p><a href="https://github.com/uvilchis">Uciel Vilchis</a></p>
+          </div>
+          <div class="navbar__user">
+            <img src="assets/screenshots/ck.jpeg" alt="christine">
+            <p><a href="https://github.com/ckong1792">Christine Kong</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg__container">
+        <div class="bg__header--container" du-parallax y="background">
+          <img class="bg__img darken" src="assets/stocks/bg-main.jpg" alt="something pretty">
+          <p class="bg__header--title">Loco</p>
+        </div>
+
+        <div class="desc__container">
+          <div class="desc__header">
+            <div class="desc__header--info">
+              <p class="desc__header--info-title">Your Commute at a Glance</p>
+              <p class="desc__header--info-desc">Every train and its official status on one page.</p>
+            </div>
+            <div class="desc__header--imgwrap">
+              <img class="desc__header--img" src="assets/screenshots/main.png" alt="phone">
+            </div>
+          </div>
+
+          <div class="desc__divider"></div>
+
+          <div class="desc__body-grid">
+            <div class="desc__item">
+              <p class="desc__item-title">Plan Ahead</p>
+              <p class="desc__item-desc">Know the status of your trains before you get to the platform. See what other people are saying.</p>
+              <img class="desc__item-img" src="assets/screenshots/details.png" alt="pretty picture">
+            </div>
+            <div class="desc__item">
+              <p class="desc__item-title">Find Your Way</p>
+              <p class="desc__item-desc">Avoid the delays. Check nearby stations and see which ones are operating before you get there.</p>
+              <img class="desc__item-img" src="assets/screenshots/map.png" alt="pretty picture">
+            </div>
+            <div class="desc__item">
+              <p class="desc__item-title">Stay in the Loop</p>
+              <p class="desc__item-desc">New York lives on a routine. Track your frequented routes to quickly view problems.</p>
+              <img class="desc__item-img" src="assets/screenshots/favs.png" alt="pretty picture">
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg__header--container" du-parallax y="background">
+          <img class="bg__img darken" src="assets/stocks/subway.jpg" alt="something pretty">
+          <p class="bg__header--subtitle">Connect with your community, see what's happening now</p>
+        </div>
+  
+        <div class="desc__container">
+          <div class="desc__header">
+            <div class="desc__header--info">
+              <p class="desc__header--info-title">Our Mission</p>
+              <p class="desc__header--info-desc">No more unexpected surprises.</p>
+            </div>
+            <div class="desc__header--imgwrap">
+              <img class="desc__header--img small" src="assets/base/clock.svg" alt="pretty picture">
+            </div>
+          </div>
+
+          <div class="desc__divider"></div>
+
+          <div class="desc__body">
+
+            <blockquote class="desc__body--quote" cite="https://www.nytimes.com">
+              New York’s subway now has the worst on-time performance of any major rapid transit system in the world, according to data collected from the 20 biggest. </br> &nbsp;&nbsp;&nbsp;&nbsp; - New York Times
+            </blockquote>
+
+            <p class="desc__body--text">
+              We were inspired to build Loco after The New York Times wrote this <a href="https://www.nytimes.com/2017/11/18/nyregion/new-york-subway-system-failure-delays.html">piece</a>.
+              We've all been there, waiting, patience wearing thin as the train we needed seems to have gotten lost. You begin to wonder if you could make it to another station and try a different route.
+              But what if the train comes right after you leave? So you wait, hoping for some announcement to let you know what's happening. Well, we got tired of waiting, and we now know that announcement is never going to come. 
+              Instead, we saw an opportunity to connect people with the amazing people around them, so we took it. 
+            </p>
+
+            <blockquote class="desc__body--quote" cite="https://www.nytimes.com">
+              With New York City’s transportation system in a state of crisis, the head of the Metropolitan Transportation Authority said on Thursday that it was time for City Hall to contribute more money to repairing and maintaining the subway system that is the lifeblood of the city. </br> &nbsp;&nbsp;&nbsp;&nbsp; - New York Times
+            </blockquote>
+
+            <p class="desc__body--text">
+              New York City is a magical place, the best city in the world, a global landmark of wealth and opportunity. Unfortunately, we are plagued with one of the <em>worst</em> transit authorities in the world. A large part of our roadmap is
+              the ability to provide the MTA with statistics identifying problem areas. What better source than the people who are riding the MTA? With our data, user complaints could be modeled into usable data to help the MTA
+              build a more efficient system. Oh, and don't worry about your personal information. We don't track who makes the complaints, just that a complaint was made.
+            </p>
+
+          </div>
+        </div>
+  
+        <div class="bg__header--container" du-parallax y="background">
+          <img class="bg__img darken" src="assets/stocks/anywhere.jpeg" alt="something pretty">
+          <p class="bg__header--subtitle">Improving life for urban Americans</p>
+        </div>
+  
+        <div class="desc__container">
+          <div class="desc__header">
+            <div class="desc__header--info">
+              <p class="desc__header--info-title">Loco Tech</p>
+              <p class="desc__header--info-desc">How we built it.</p>
+            </div>
+            <div class="desc__header--imgwrap">
+              <img class="desc__header--img small" src="assets/base/tech.svg" alt="pretty picture">
+            </div>
+          </div>
+
+          <div class="desc__divider"></div>
+
+          <div class="desc__body-grid">
+
+            <div class="desc__item">
+              <p class="desc__item-title">Our Front End</p>
+              <div class="desc__item--icon-container">
+                <img class="desc__item--icon" src="assets/base/react.svg" alt="React">
+                <img class="desc__item--icon" src="assets/base/expo.png" alt="Expo">
+              </div>
+              <p class="desc__item-desc">Cross-platform and mobile React clients deployed on Expo, powered by the latest front-end technology from Facebook. We prefer the cutting edge.</p>
+            </div>
+
+            <div class="desc__item">
+              <p class="desc__item-title">Our Realtime</p>
+              <div class="desc__item--icon-container">
+                <img class="desc__item--icon" src="assets/base/nodejs.svg" alt="Node">
+                <img class="desc__item--icon" src="assets/base/digitalocean.png" alt="Digital Ocean">
+                <img class="desc__item--icon" src="assets/base/redis.png" alt="Redis">
+                <img class="desc__item--icon" src="assets/base/mongodb.png" alt="Mongo">
+              </div>
+              <p class="desc__item-desc">Powered by Express/Node and deployed on Digital Ocean, one of the most trusted deployment platforms. Redis and Mongo provide a powerful, fast, and flexible data persistence for our users.</p>
+            </div>
+
+            <div class="desc__item">
+              <p class="desc__item-title">Our Back End</p>
+              <div class="desc__item--icon-container">
+                <img class="desc__item--icon" src="assets/base/ec2.png" alt="AWS EC2">
+                <img class="desc__item--icon" src="assets/base/rds.png" alt="AWS RDS">
+                <img class="desc__item--icon" src="assets/base/mysql.png" alt="MySQL">
+              </div>
+              <p class="desc__item-desc">Static data is fetched from public transit data and persisted on our AWS-hosted API, backed by MYSQL. We conform with GTFS standards to maintain expandability.</p>
+            </div>
+
+          </div>
+
+          <div class="desc__body">
+            <blockquote class="desc__body--quote" cite="https://www.time.com">
+              With gas prices rising and family budgets strained, more commuters are looking for efficient ways to get to work without a car. But are America's transit networks up to the task? </br> &nbsp;&nbsp;&nbsp;&nbsp; - Time
+            </blockquote>
+            
+            <p class="desc__body--text">The problem faced by many in American cities (not just New York) is painfully slow and inconsistent public transit. In <a href="https://jalopnik.com/the-worlds-ten-worst-public-transit-systems-657407658">Jalopnik's piece</a> on the worst transit systems in the world, America had over <em>five</em> entries. The other 5 cities listed were all in different countries. The American cities are not isolated to any particular region, rather they range from coast to coast. One day, we want to help Americans across the country, a dream that impacted every step of our design process.</p>
+          </div>
+        </div>
+
+        <div class="about__container">
+          <div class="about__help">
+            <h4 class="about__header">How to download</h4>
+            <ol class="about__help-list">
+              <li>Download the Expo.io app on your iPhone or Android device.</li>
+              <li>Use the Expo.io app with our QR code, or enter @kwakles/mobile in the client.</li>
+              <li>Ready to view! You will need to login to add reports.</li>
+            </ol>
+            <p class="italics">A partial web client is available to view <a href="http://104.131.63.107">here</a>. This is still very much a WIP.</p>
+          </div>
+          <div class="about__code">
+            <h4 class="about__header">QR Code</h4>
+            <img class="about__code--img" src="assets/base/expoqr.png" alt="failed to load qr">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
-  <script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="components/app.js"></script>
-  <script type="text/javascript" src="components/navbar.js"></script>
-  <script type="text/javascript" src="components/desc.js"></script>
-  <script type="text/javascript" src="components/poweredby.js"></script>
-  <script type="text/javascript" src="components/about.js"></script>
-  <script type="text/javascript" src="components/footer.js"></script>
-  <script type="text/javascript" src="components/parallaxImage.js"></script>
 
 </html>
